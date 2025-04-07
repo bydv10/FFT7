@@ -22,11 +22,10 @@ ro.product.build.tags=release-keys
 ro.product.build.type=user
 ro.product.build.version.incremental=X926BXXU2AXL1
 ro.soc.manufacturer=Qualcomm
-ro.soc.model=SM8650-AC
-ro.gpu.model=Adreno750
-ro.gpu=Adreno750
-ro.hardware.chipname=Pineapple
-ro.build.version.oneui=60101
+ro.soc.model=SM8750-3-AB
+ro.gpu.model=Adreno830
+ro.gpu=Adreno830
+ro.build.version.oneui=70000
 # end common build properties
 
 # begin PRODUCT_BOOTIMAGE_PROPERTIES

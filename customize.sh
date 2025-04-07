@@ -4,7 +4,7 @@ ui_print "🌌 Starting Now: $MOD_PROP_MODEL ($MOD_PROP_PRODUCT) Prop Boost - $M
 ui_print "┏━━━[ FFT7 Tweaker ]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
 ui_print "┃ Built Specially for Samsung Galaxy Tab A7                ┃"
 ui_print "┃ Ultimate Power Meets Perfect Design                      ┃"
-ui_print "┃ By: Belal Youseef (bydv10) & MRX7014                     ┃"
+ui_print "┃ By: Belal Youseef (bydv10) x MRX7014                     ┃"
 ui_print "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
 sleep 2
 ui_print "► Turning Into OneUI (Full Version) → Loading the Full Magic"
