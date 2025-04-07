@@ -298,84 +298,82 @@ sys.hqm.support=true
 ro.security.fips.ux=Disabled
 persist.device_config.runtime_native_boot.iorap_perfetto_enable=true
 ro.netflix.bsp_rev=Q6115-31409-1
-########################
-# FFT7 v1.0.0
-# build.prop Tweaks
-########################
-# Faster Boot Time & Power Optimization  
-ro.config.hw_power_saving=1  
-ro.config.hw_fast_dormancy=1  
-ro.config.hw_quickpoweron=true  
-ro.ril.sensor.sleep.control=1  
-# UI & Touch Responsiveness  
-persist.sys.ui.hw=1  
-windowsmgr.max_events_per_sec=300  
-# FPS Stabilizer & Graphics Optimization  
-debug.sf.showupdates=0  
-debug.sf.showcpu=0  
-debug.sf.showbackground=0  
-debug.sf.showfps=0  
-debug.egl.hw=1
-# RAM Management & Performance  
-dalvik.vm.dexopt-flags=m=y,v=n,o=v,u=n  
-# Battery Optimization  
-ro.ril.disable.power.collapse=0  
-ro.ril.power_collapse=1  
-# Camera Tweaks  
-persist.camera.eis.enable=1  
-persist.vendor.camera.eis.enable=1  
-camera.eis.enable=1  
-persist.hw_camera.video_sta=true  
-persist.vendor.camera.HAL3.enabled=1  
-persist.camera.HAL3.enabled=1  
-ro.media.enc.jpeg.quality=100  
-# Security & SafetyNet Tweaks  
-ro.securestorage.support=false
-ro.knox.enhance.zygote.aslr=1
-# Audio Enhancements  
-vendor.audio.media.stereo.control=0  
-persist.audio.dualmic.config=endfire  
-persist.audio.fluence.mode=endfire  
-persist.audio.fluence.voicecall=true  
-persist.vendor.audio.fluence.voicecomm=true  
-persist.audio.fluence.voicerec=false  
-persist.audio.fluence.speaker=true  
-audio.deep_buffer.media=true  
-ro.media.dec.aud.mp3.enabled=1  
-ro.media.enc.aud.mp3.enabled=1  
-ro.media.dec.aud.flac.enabled=1  
-ro.media.enc.aud.flac.enabled=1  
-ro.media.dec.aud.wma.enabled=1  
-ro.media.enc.aud.wma.enabled=1  
-media.aac_51_output_enabled=true  
-persist.audio.speaker.dualmode=true  
-vendor.audio.playback.mch.downsample=true  
-# Privacy & Logging Tweaks  
-ro.config.nocheckin=1  
-profiler.force_disable_err_rpt=1  
-profiler.force_disable_ulog=1  
-logcat.live=disable  
-# Multi-User Support  
-fw.max_users=5  
-fw.show_multiuserui=1  
-fw.showhiddenusers=1  
-fw.poweruserswitcher=1  
-# Google Services Tweaks  
-ro.com.google.locationfeatures=0
-ro.com.google.networklocation=0
-ro.com.google.cdb.spa1=bsxasm1
-ro.bbt.support.circle2search=true
-# Streaming & Video Performance  
+ro.media.enc.jpeg.quality=100
+ro.media.dec.jpeg.memcap=8000000
+ro.media.enc.hprof.vid.bps=8000000
+ro.media.capture.maxres=8m
+ro.media.panorama.defres=3264×1840
+ro.media.panorama.frameres=1280×720
+ro.camcorder.videoModes=true
+ro.media.enc.hprof.vid.fps=65
+ro.camera.enableCamera1MaxZsl=1
+camera.disable_zsl_mode=1
 media.stagefright.enable-meta=true
-media.stagefright.enable-scan=true  
-media.stagefright.enable-http=true  
+media.stagefright.enable-scan=true
+media.stagefright.enable-http=true
 media.stagefright.enable-rtsp=true
-# Vulkan X6739
-debug.hwui.renderer=vulkan
-debug.renderengine.backend=vulkan
-vendor.debug.renderengine.backend=vulkan
-ro.hwui.hardware.vulkan=true
-ro.hwui.use_vulkan=true
+media.stagefright.enable-record=false
+net.tcp.buffersize.default=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.wifi=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.umts=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.gprs=4096,87380,256960,4096,16384,256960
+net.tcp.buffersize.edge=4096,87380,256960,4096,16384,256960
+ro.telephony.call_ring.delay=0
+ring.delay=0
+ro.ril.enable.amr.wideband=1
+persist.cust.tel.eons=1
+ro.config.hw_fast_dormancy=1
+debug.sf.hw=1
+persist.sys.ui.hw=1
+ro.ril.disable.power.collapse=1
+pm.sleep_mode=1
+windowsmgr.max_events_per_sec=60
+wifi.supplicant_scan_interval=180
+persist.sys.shutdown.mode=hibernate
+ro.config.hw_quickpoweron=true
+windowsmgr.max_events_per_sec=300
+ro.max.fling_velocity=15000 
+ro.min.fling_velocity=8000 
+ro.min_pointer_dur=8
+touch.pressure.scale=0.1
+fw.max_users=5
+fw.show_multiuserui=1
+fw.showhiddenusers=1 
+fw.poweruserswitcher=1
+ro.opa.eligible_device=true
+ro.telephony.call.ring.delay=0
+ring.delay=0
+pm.sleep_mode=1
+ro.ril.disable.power.collapse=0
+wifi.supplicant_scan_interval=180
+debug.sf.showupdates=0
+debug.sf.showcpu=0
+debug.sf.showbackground=0
+debug.sf.showfps=0
+vendor.audio.media.stereo.control=0
+persist.audio.dualmic.config=endfire
+persist.audio.fluence.mode=endfire
+persist.audio.fluence.voicecall=true
+persist.vendor.audio.fluence.voicecomm=true
+persist.audio.fluence.voicerec=false
+persist.audio.fluence.speaker=true
+audio.deep_buffer.media=true
+vendor.voice.conc.fallbackpath=deep-buffer
+ro.media.dec.aud.mp3.enabled=1
+ro.media.enc.aud.mp3.enabled=1
+ro.media.dec.aud.flac.enabled=1
+ro.media.enc.aud.flac.enabled=1
+ro.media.dec.aud.wma.enabled=1
+ro.media.enc.aud.wma.enabled=1
+media.aac_51_output_enabled=true
+flac.sw.decoder.24bit.support=true
+persist.audio.speaker.dualmode=true
+vendor.audio.playback.mch.downsample=true
+vendor.audio.use.sw.alac.decoder=true
+vendor.audio.use.sw.ape.decoder=true
+af.fast_track_multiplier=1
+debug.force_low_ram=true
+ro.config.small_battery=true
 ####################################
 # from variable PRODUCT_SYSTEM_DEFAULT_PROPERTIES
 ####################################
@@ -383,3 +381,4 @@ external_storage.cross_user.enabled=1
 # Auto-added by post_process_props.py
 persist.sys.usb.config=mtp
 # end of file
+
