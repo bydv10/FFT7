@@ -1,3 +1,5 @@
+#!/system/bin/sh
+
 ui_print "┏━━━[ FFT7 Tweaker ]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
 ui_print "┃ Built Specially for Samsung Galaxy Tab A7                ┃"
 ui_print "┃ Ultimate Power Meets Perfect Design                      ┃"
@@ -15,7 +17,6 @@ sleep 2
 ui_print "► Please Wait.... → Putting It All Together Perfectly"
 sleep 5
 ui_print "✨ Done, Enjoy, Your Device Is Now Amazing!"
-#!/system/bin/sh
 
 REPLACE="
 /system/etc/permissions/com.samsung.device.lite.xml
