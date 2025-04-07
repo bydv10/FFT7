@@ -1,4 +1,4 @@
-## By MRX7014
+## Based on Tab S10 Ultra Spoofer Module By MRX7014
 ###
 # begin product/etc/build.prop
 ###
@@ -21,9 +21,6 @@ ro.product.build.id=UP1A.231005.007
 ro.product.build.tags=release-keys
 ro.product.build.type=user
 ro.product.build.version.incremental=X926BXXU2AXL1
-ro.product.build.version.release=14
-ro.product.build.version.release_or_codename=14
-ro.product.build.version.sdk=34
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=SM8650-AC
 ro.gpu.model=Adreno750
@@ -45,9 +42,6 @@ ro.bootimage.build.id=UP1A.231005.007
 ro.bootimage.build.tags=release-keys
 ro.bootimage.build.type=user
 ro.bootimage.build.version.incremental=X926BXXU2AXL1
-ro.bootimage.build.version.release=14
-ro.bootimage.build.version.release_or_codename=14
-ro.bootimage.build.version.sdk=34
 # end PRODUCT_BOOTIMAGE_PROPERTIES
 ###
 # end product/etc/build.prop
@@ -69,9 +63,6 @@ ro.vendor.build.id=UP1A.231005.007
 ro.vendor.build.tags=release-keys
 ro.vendor.build.type=user
 ro.vendor.build.version.incremental=X926BXXU2AXL1
-ro.vendor.build.version.release=14
-ro.vendor.build.version.release_or_codename=14
-ro.vendor.build.version.sdk=34
 # end common build properties
 ###
 # end vendor/build.prop
