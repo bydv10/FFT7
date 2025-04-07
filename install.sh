@@ -25,7 +25,7 @@ BACKUP_DIR="/data/adb/modules/samsung_lite_remover/backup"
 mkdir -p $BACKUP_DIR
 
 
-echo "[$(date "+%Y-%m-%d %H:%M:%S")] بدء حذف ملفات Samsung Lite" > /cache/samsung_lite_remover.log
+echo "[$(date "+%Y-%m-%d %H:%M:%S")] Starting Delete Samsung Lite Files" > /cache/samsung_lite_remover.log
 
 
 mount -o rw,remount /system
@@ -43,16 +43,16 @@ for TARGET in $FILES_TO_REMOVE; do
         
         
         if [ ! -e "$TARGET" ]; then
-            echo "[√] تم حذف: $TARGET" >> /cache/samsung_lite_remover.log
+            echo "[√] Deleted: $TARGET" >> /cache/samsung_lite_remover.log
         else
-            echo "[X] فشل في حذف: $TARGET" >> /cache/samsung_lite_remover.log
+            echo "[X] Undeleted: $TARGET" >> /cache/samsung_lite_remover.log
         fi
     else
-        echo "[!] الملف غير موجود: $TARGET" >> /cache/samsung_lite_remover.log
+        echo "[!] File Not Found: $TARGET" >> /cache/samsung_lite_remover.log
     fi
 done
 
-echo "[$(date "+%Y-%m-%d %H:%M:%S")] اكتملت عملية الحذف (النظام في وضع RW)" >> /cache/samsung_lite_remover.log
+echo "[$(date "+%Y-%m-%d %H:%M:%S")] Deleting Operation Done (System is RW)" >> /cache/samsung_lite_remover.log
 
 MODPATH_SYSTEM_PROP="$MODPATH"/system.prop
 MOD_PROP_MODEL=$(grep_prop ro.product.model "$MODPATH_SYSTEM_PROP")
