@@ -1,0 +1,35 @@
+name: Build FFT7 Magisk Module
+
+on:
+  workflow_dispatch:
+   inputs:
+      tag_name:
+        description: 'Tag name to build (e.g., v1.0.0)'
+        required: true
+        type: string
+
+jobs:
+  build:
+    name: Build FFT7 Magisk Module
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Create FFT7 Zip
+        run: |
+          zip -r FFT7-${{ github.event.inputs.tag_name }}.zip . -x ".git*" -x ".github*" -x "README.md"
+    
+      - name: Create a tag
+        run: |
+          git tag ${{ github.run_id }}
+          git push origin ${{ github.run_id }}
+
+      - name: Upload FFT7 to Releases
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            FFT7-${{ github.event.inputs.tag_name }}.zip
+          tag_name: ${{ github.event.inputs.tag_name }}
+          release_name: FFT7
+          body: |
+            FFT7 ${{ github.event.inputs.tag_name }}
