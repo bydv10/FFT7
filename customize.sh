@@ -34,16 +34,16 @@ for TARGET in $FILES_TO_REMOVE; do
         
         
         if [ ! -e "$TARGET" ]; then
-            echo "[√] تم حذف: $TARGET" >> /cache/samsung_lite_remover.log
+            echo "[√] Deleted: $TARGET" >> /cache/samsung_lite_remover.log
         else
-            echo "[X] فشل في حذف: $TARGET" >> /cache/samsung_lite_remover.log
+            echo "[X] Undeleted: $TARGET" >> /cache/samsung_lite_remover.log
         fi
     else
-        echo "[!] الملف غير موجود: $TARGET" >> /cache/samsung_lite_remover.log
+        echo "[!] File Not Found: $TARGET" >> /cache/samsung_lite_remover.log
     fi
 done
 
-echo "[$(date "+%Y-%m-%d %H:%M:%S")] اكتملت عملية الحذف (النظام في وضع RW)" >> /cache/samsung_lite_remover.log
+echo "[$(date "+%Y-%m-%d %H:%M:%S")] Deleteing Operation Done (System is RW)" >> /cache/samsung_lite_remover.log
 
 MODPATH_SYSTEM_PROP="$MODPATH"/system.prop
 MOD_PROP_MODEL=$(grep_prop ro.product.model "$MODPATH_SYSTEM_PROP")
@@ -55,21 +55,21 @@ MOD_PROP_MONTH=$(date -d "$MOD_PROP_SECURITYPATCH" '+%B')
 MOD_PROP_YEAR=$(date -d "$MOD_PROP_SECURITYPATCH" '+%Y')
 
 # Print head message
-ui_print "- Installing, $MOD_PROP_MODEL ($MOD_PROP_PRODUCT) Prop - $MOD_PROP_MONTH $MOD_PROP_YEAR"
+ui_print "🌌 Starting Now: $MOD_PROP_MODEL ($MOD_PROP_PRODUCT) Prop Boost - $MOD_PROP_MONTH $MOD_PROP_YEAR"
 
-ui_print "*****************************************"
-ui_print "*   Flagship Features And Full One UI      *"
-ui_print "*       For Samsung Galaxy Tab A7        *"
-ui_print "****************************************"
+ui_print "┏━━━[ FFT7 Tweaker ]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
+ui_print "┃ Built Specially for Samsung Galaxy Tab A7                ┃"
+ui_print "┃ Ultimate Power Meets Perfect Design                      ┃"
+ui_print "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛"
 sleep 2
-ui_print "Turning Into OneUI (Full Version)"
+ui_print "► Turning Into OneUI (Full Version) → Loading the Full Magic"
 sleep 2
-ui_print "Adding More Hidden Features"
+ui_print "► Adding More Hidden Features → Bringing Cool Flagships Features"
 sleep 2
-ui_print "Make It more Smooth"
+ui_print "► Make It More Smooth → Speeding Up Everything Nicely"
 sleep 2
-ui_print "For Best Experience Flash DT Device Tweaker Module by MRX7014"
+ui_print "► For Best Experience Flash DT Device Tweaker Module by MRX7014 → Make It Even Better"
 sleep 2
-ui_print "Please Wait...."
+ui_print "► Please Wait.... → Putting It All Together Perfectly"
 sleep 5
-ui_print "Done, Enjoy (bydv10)"
+ui_print "✨ Done, Enjoy (bydv10) → Your Device Is Now Amazing!"
