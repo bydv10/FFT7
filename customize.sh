@@ -1,6 +1,3 @@
-# Print head message
-ui_print "🌌 Starting Now: $MOD_PROP_MODEL ($MOD_PROP_PRODUCT) Prop Boost - $MOD_PROP_MONTH $MOD_PROP_YEAR"
-
 ui_print "┏━━━[ FFT7 Tweaker ]━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
 ui_print "┃ Built Specially for Samsung Galaxy Tab A7                ┃"
 ui_print "┃ Ultimate Power Meets Perfect Design                      ┃"
