@@ -17,7 +17,7 @@ jobs:
       
       - name: Create FFT7 Zip
         run: |
-          zip -r FFT7-${{ github.event.inputs.tag_name }}.zip . -x ".git*" -x ".github*" -x "README.md"
+          zip -r FFT7-${{ github.event.inputs.tag_name }}.zip . -x ".git*" -x ".github*" -x "README.md" -x "FFT7-Banner.png"
     
       - name: Create a tag
         run: |
