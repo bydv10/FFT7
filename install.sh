@@ -43,9 +43,9 @@ for TARGET in $FILES_TO_REMOVE; do
         
         
         if [ ! -e "$TARGET" ]; then
-            echo "[√] Deleted: $TARGET" >> /cache/samsung_lite_remover.log
+            echo "[√] Deleted Successfully: $TARGET" >> /cache/samsung_lite_remover.log
         else
-            echo "[X] Undeleted: $TARGET" >> /cache/samsung_lite_remover.log
+            echo "[X] Not Deleted: $TARGET" >> /cache/samsung_lite_remover.log
         fi
     else
         echo "[!] File Not Found: $TARGET" >> /cache/samsung_lite_remover.log
