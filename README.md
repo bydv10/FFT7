@@ -1,6 +1,6 @@
 ### FFT7 - Flagships Features for Tab A7
 
-<div align="center"><img src="FFT7-Banner.jpg">
+<div align="center"><img src="FFT7-Banner.png">
   
 **A Magisk Module To Enable Samsung Flagships Features on Samsung Tab A7**
 
