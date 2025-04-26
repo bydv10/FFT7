@@ -11,7 +11,7 @@ on:
 jobs:
   build:
     name: Build FFT7 Magisk Module
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       
